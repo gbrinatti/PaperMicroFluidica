@@ -52,8 +52,8 @@
 %\titlerunning{Short form of title}        % if too long for running head
 
 \author{Guillermo D. Brinatti Vazquez         \and
-        Oscar E. Martínez \and
-        Juan Martín Cabaleiro %etc.
+        Oscar E. Mart\'{i}nez \and
+        Juan Mart\'{i}n Cabaleiro %etc.
 }
 
 %\authorrunning{Short form of author list} % if too long for running head
@@ -79,6 +79,31 @@
 \keywords{First keyword \and Second keyword \and More}
 \end{abstract}
 
+\section{Results and Discussion}
+
+To characterize the technique a series of Raman spectra were measured at different temperatures. This was performed by using a pure water sample in the temperature controlled cell and by scanning the angle on the diffraction grating. After taking the numeric derivative, the recovered spectra is shown in figure \ref{fig:spectra}. Results show an isosbestic point around 470 nm in agreement with previous measurements\cite{walrafen1}. As temperature increase, the shorter wavelength components of the Raman spectrum reduce their intensity while the longer wavelength part slightly increases. The total spectrum collected in each detector (channel A and B) is shaded in light blue and red. This measurements are used to set the angle at which the spectrum is split exactly at the isosbectic point, leading to the maximum temperature sensibility. 
+
+Having set the spectrometer properly, a calibration is made by computing the quantity $S$, as defined in equation \ref{eq:S}, as a function of temperature. The result from this experiment is shown in figure \ref{fig:calib} where a linear behavior is exhibited in the range of interest. A linear fit is finally used to obtain the calibration curve. With this calibration and by measuring the noise in the temperature signal  the resolution of the method can be estimated. The result of this experiment is consistent with the spread of the data around the linear fit in figure \ref{fig:calib} with a value of 0.8 K for a integration time of one second.
+
+With this results a full characterization of the thermal evolution of the microchannels under electroosmotic flow is possible. First of all, the evolution of the temperature at the \textit{turn on} is studied, from ambient temperature (when the electric field is turned off) to the equilibrium temperature once the flow is established. The result of this experiment for a channel with dimensions $b = h = 100$ $\mathrm{\mu m}$ and $L$ = 20 mm is shown if figure \ref{fig:turnon}. The flow velocity was measured to be 1 mm/s. A temperature rise of 12 K is observer in a short time (around 10 seconds) for two different positions in the channel 5 mm apart. This timing is independent of the position of the channel, showing no mass transport effects.
+
+As mentioned before, the advantage of a confocal collection scheme is that spatial temperature maps can be performed. In figure \ref{fig:horizontal} we start by showing a lateral scan (perpendicular to the flow direction, parallel to the coverglass) in a channel of dimensions $b = h = 100$ $\mathrm{\mu m}$ and $L$ = 40 mm and once a stationary temperature was established. Despite some noise, a constant 13 K increase in temperature is observed compared to ambient temperature. The sensing close to the walls of the channel is not possible due to a strong fluorescence signal coming from the PDMS. This limitation might not be the case in other manufacturing materials.
+
+In figure \ref{fig:vertical} a vertical scan is shown for the same chip and for two different total dissipated powers on the water. Here, sensing near the ceiling of the channel is not possible (again due to PDMS fluorescense) but it is near the floor as glass exhibit no fluorescence. Because of this, data points are shown from the center of the channel to the glass surface, where the signal starts decaying as the collection volume starts sensing the glass space (and temperature SNR starts decreasing). Again, similitar to what was shown in figure \ref{fig:horizontal}, temperature exhibit a constant behaviour on the whole vertical scan.
+
+The final spatial scan is shown in figure \ref{fig:long} where a longitudinal scan was performed. Again, temperature shows a constant behavior along the channel, similar to what was shown in figure \ref{fig:turnon}. This is consistent with theoretical calculations \cite{jouleteorico} where temperature rise occurs in the very beginning of the channel and then a constant value is achieved. A simple calculation considering that all heat flows trough the floor of the channel (glass) can be useful to estimate the required temperature gradient needed to reach a stationary regime where the extracted heat compensates Joule effect. For a typical dissipated power of 40 mW and a channel of dimensions $b = h = 100$ $\mathrm{\mu m}$ and $L$ = 20 mm the required temperature difference between the ceiling and the floor is 
+
+\begin{equation}
+\Delta T = \frac{Ph}{kLb} = 1.7\,\, \mathrm{K},
+\end{equation}
+
+where $P$ is Joule heat dissipated on the channel and $k$ is water thermal conductivity. This upper bound is already on the limits of what is measurable with the technique and then our measurements are consistent with the glass base of the channel dominating as dissipation mechanism. 
+
+To confirm this hypothesis curves of temperature rise as function of dissipated power per unit glass area were measured for different channel geometries. The result of this experiment is plotted in figure \ref{fig:rectas}. A linear fit was performed for each data set. Results show that all different geometries have a similar slope, proving that glass area is the most relevant parameter defining heat dissipation out of our channels. This is also consistent with results from other groups \cite{competencia1} where rectangular channels made completely out of PDMS exhibit higher temperatures and longitudinal variations with similar conductivity and applied field. 
+
+
+\bibliographystyle{spphys}
+\bibliography{bibliography}
 
 % BibTeX users please use one of
 %\bibliographystyle{spbasic}      % basic style, author-year citations
